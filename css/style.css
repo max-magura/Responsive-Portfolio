@@ -198,6 +198,8 @@ input[type=text], input[type=email], textarea {
 
 textarea {
     height: 200px;
+    padding: 10px;
+    font-size: 14px;
 }
 
 input[type=submit] {
@@ -207,4 +209,90 @@ input[type=submit] {
     cursor: pointer;
     background: #4aaaa5;
     border: 0 none;
+}
+
+@media screen and (max-width: 980px) {
+
+    .container {
+        width: 80%;
+        max-width: 840px;
+    }
+
+    #masthead {
+        padding-top: 0px;
+    }
+
+    .main-section {
+        max-width: 600px;
+    }
+
+    .work {
+        width: 248px;
+    }
+
+    #contact-form ul {
+        list-style-type: none;
+        padding-left: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 80%;
+        max-width: 728px;
+    }
+
+    #masthead {
+        padding-top: 0px;
+    }
+
+    .main-section {
+        max-width: 728px;
+    }
+
+    .work {
+        width: 312px;
+    }
+
+    #contact-form ul {
+        list-style-type: none;
+        padding-left: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+
+    .container {
+        max-width: 100%;
+    }
+
+    #logo {
+        width: 100%;
+    }
+
+    #masthead {
+        clear: both;
+        padding-top: 0px;
+    }
+
+    #logo {
+        width: 100%;
+    }
+
+    .main-section {
+        max-width: 600px;
+    }
+
+    .work {
+        width: 100%;
+    }
+
+    #contact-form ul {
+        list-style-type: none;
+        padding-left: 0px;
+    }
+    
 }
