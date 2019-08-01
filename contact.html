@@ -1,64 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!DOCTYPE html>
-    <html lang="en">
+    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <title>Max's Contact Page</title>
+        <link rel="stylesheet" type="text/css" href="css/contact-style.css">
+        <title>Contact | Max Magura</title>
     </head>
 
 <body>
-    <header>
-        
-        <h1 class="namebox"><a class="name-box-links" href="index.html">Max Magura</a></h1>
-
-        <div class= "links">
-            <p><a class="menulinks" href="index.html">About</a> | <a class="menulinks" href="contact.html">Contact</a> | <a class="menulinks" href="portfolio.html">Portfolio</a></p>
-        </div> 
-
+    <header id="masthead">
+        <div class="container">
+            <a href="index.html" id="logo">Max Magura</a>
+            <nav>
+                <a href="index.html">About</a> |
+                <a href="contact.html">Contact</a> | 
+                <a href="portfolio.html">Portfolio</a>
+            </nav> 
+        </div>
     </header>
 
-    <div class="topborder"></div>
+    <div id="main-container" class="container">
+        </section class="main-section">
+            <h1>Contact</h1>
 
-    <div class="main-section">
+            <form id="contact-form">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                            <input type="text" id="name" name="name" value="" placeholder="Bruce Wayne" required="required">
+                    </li>
+        
+                    <li>
+                        <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="NotBatman@gmail.com" required="required">
+                    </li>
 
-        <section class="content">
-
-            <h2>Contact</h2>
-
-            <hr>
-
-            <form>
-                    Name:
-                    <br>
-                        <input type="text" name="name" value="" placeholder="Bruce Wayne">
-                    <br>
-                    <br>
-                    Email:
-                    <br>
-                        <input type="email" name="email" value="" placeholder="NotBatman@gmail.com">
-                    <br>
-                    <br>
-                    Message:
-                    <br>
-                        <input class="messagebox" type="text" name="message" value="" placeholder="Type your message here.">
-                    <br>
-                    <br>
-                    <input class="submitbutton" type="button" value="Submit"> 
-
+                    <li>
+                        <label for="message">Messsage</label>
+                            <textarea id="message" name="message" placeholder="Type your message here. required=">
+                            </textarea>
+                    </li>
+                </ul>
+                <input type="submit">
             </form>
 
-  
-        
         </section>
     
     </div>
 
     <footer>
-        <p>Copyright © 2019 Max Magura</p>
+        <div class="container">
+            Copyright © 2019 Max Magura
+        </div>
     </footer>
 
 </body>
